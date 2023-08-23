@@ -1,4 +1,4 @@
-export default function getData(callback: Function, isTest = true) {
+export default function getData(callback: Function, isTest = false) {
   fetch(
     isTest ? "./test.json" : "https://static.ui.com/fingerprint/ui/public.json",
     {
