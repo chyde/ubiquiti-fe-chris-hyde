@@ -9,4 +9,6 @@
 [X] Deploy pipeline in place
   -> https://ubiquiti-fe-chris-hyde-f7sif74do-chyde.vercel.app/
 [ ] Add Grid view? (time sensitive)
-[ ] Add Device overview page
+[X] Add Device overview page
+[ ] build out overview page
+[ ] fix data reload bug

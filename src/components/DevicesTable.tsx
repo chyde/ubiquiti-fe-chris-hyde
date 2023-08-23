@@ -30,7 +30,14 @@ export default function DevicesTable({ tableData }: { tableData: any }) {
             ? tableData.map((row: any) => (
                 <TableRow
                   key={row.id}
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  sx={{
+                    "&:last-child td, &:last-child th": { border: 0 },
+                    ":hover": { backgroundColor: "#eee", cursor: "pointer" },
+                  }}
+                  onClick={() => {
+                    console.log("click", row?.icon?.id);
+                    window.location.href = "./device";
+                  }}
                 >
                   <TableCell>
                     <img

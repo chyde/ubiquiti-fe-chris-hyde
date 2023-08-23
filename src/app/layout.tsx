@@ -34,7 +34,10 @@ export default function RootLayout({
 
   useEffect(() => {
     console.log("trying to get data");
-    getData(setAppData);
+    if (!appData?.version) {
+      console.log("FUCK", appData?.version);
+      getData(setAppData);
+    }
   }, []);
 
   return (

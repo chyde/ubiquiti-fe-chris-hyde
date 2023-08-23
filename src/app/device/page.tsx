@@ -2,8 +2,7 @@
 import * as React from "react";
 
 import Navbar from "../../components/Navbar";
-import ToolbarDevices from "../../components/Toolbar";
-import DevicesTable from "@/components/DevicesTable";
+import DeviceViewBar from "../../components/DeviceViewBar";
 import AppDataContext from "../../../data/DataContext";
 
 export default function Home() {
@@ -13,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Navbar title="Devices" />
-      <ToolbarDevices title="Devices" />
-      <ToolbarDevices title="Devices" />
+      <DeviceViewBar title="Devices" />
+      <div>Device</div>
     </>
   );
 }
