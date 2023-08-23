@@ -5,8 +5,13 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 import Navbar from "../components/Navbar";
-import { title } from "process";
+import ToolbarDevices from "../components/Toolbar";
 
 export default function Home() {
-  return <Navbar title="Devices" />;
+  return (
+    <>
+      <Navbar title="Devices" />
+      <ToolbarDevices title="Devices" />
+    </>
+  );
 }

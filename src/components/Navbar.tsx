@@ -3,8 +3,9 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
 
-export default function Home({ title }: { title: string }) {
+export default function Navbar({ title }: { title: string }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -21,14 +22,22 @@ export default function Home({ title }: { title: string }) {
           <Typography
             variant="h6"
             component="div"
+            color={"grey.800"}
             sx={{ flexGrow: 1, marginLeft: 2 }}
           >
             {title}
           </Typography>
-          <Typography variant="body1" component="div" sx={{ marginRight: 2 }}>
+          <Typography
+            variant="body1"
+            component="div"
+            color={"grey.800"}
+            sx={{ marginRight: 2 }}
+          >
             Chris Hyde - Sr. Front-End Engineer
           </Typography>
         </Toolbar>
+
+        <Divider />
       </AppBar>
     </Box>
   );
