@@ -10,7 +10,7 @@ export default function Navbar({ title }: { title: string }) {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
-        sx={{ paddingLeft: 0, backgroundColor: "#C4C4C4" }}
+        sx={{ paddingLeft: 0, backgroundColor: "#F6F6F8" }}
         elevation={0}
       >
         <Toolbar disableGutters={true}>
